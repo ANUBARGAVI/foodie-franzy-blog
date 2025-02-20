@@ -1,0 +1,124 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "10 Easy Breakfast Recipes to Start Your Day",
+      "excerpt": "Kickstart your morning with these delicious and easy-to-make breakfast recipes.",
+      "content": "Breakfast is the most important meal of the day. From fluffy pancakes to avocado toast, these recipes are perfect for busy mornings. Try them out and start your day with a burst of energy!",
+      "image": "/images/Breakfast.jpeg",
+      "category": "Breakfast",
+      "views": 500,
+      "readMore": "/post/1"
+    },
+    {
+      "id": 2,
+      "title": "Healthy Smoothie Recipes for Weight Loss",
+      "excerpt": "Stay fit and refreshed with these delicious and nutritious smoothie recipes.",
+      "content": "Smoothies are a great way to get your daily dose of fruits and veggies. These weight-loss-friendly smoothies are not only delicious but also easy to make. Blend and enjoy!",
+      "image": "/images/Smoothies.jpeg",
+      "category": "Healthy Eating",
+      "views": 420,
+      "readMore": "/post/2"
+    },
+    {
+      "id": 3,
+      "title": "Quick and Easy Lunch Ideas for Busy Days",
+      "excerpt": "These quick and easy lunch recipes are perfect for when you're on the go.",
+      "content": "Don't have time to cook an elaborate lunch? No worries! These quick and easy recipes are perfect for busy days. From wraps to salads, there's something for everyone.",
+      "image": "/images/lunch.jpeg",
+      "category": "Lunch",
+      "views": 380,
+      "readMore": "/post/3"
+    },
+    {
+      "id": 4,
+      "title": "Delicious Vegan Dinner Recipes",
+      "excerpt": "Enjoy these mouth-watering vegan dinner recipes that are both healthy and tasty.",
+      "content": "Going vegan doesn't mean sacrificing flavor. These delicious vegan dinner recipes are packed with nutrients and bursting with flavor. Perfect for a satisfying evening meal.",
+      "image": "/images/dinner.jpeg",
+      "category": "Dinner",
+      "views": 450,
+      "readMore": "/post/4"
+    },
+    {
+      "id": 5,
+      "title": "Homemade Desserts to Satisfy Your Sweet Tooth",
+      "excerpt": "Indulge in these delicious homemade desserts that are easy to make.",
+      "content": "Craving something sweet? These homemade dessert recipes are perfect for satisfying your sweet tooth. From brownies to cheesecakes, try them out and impress your guests!",
+      "image": "/images/deserts.jpeg",
+      "category": "Desserts",
+      "views": 600,
+      "readMore": "/post/5"
+    },
+    {
+      "id": 6,
+      "title": "Comfort Food Recipes for Cozy Nights",
+      "excerpt": "Warm up with these comforting recipes perfect for a cozy night in.",
+      "content": "There's nothing like a comforting meal on a chilly evening. These recipes are sure to warm you up and fill your heart with joy. Perfect for a cozy night at home.",
+      "image": "/images/comfort.jpeg",
+      "category": "Comfort Food",
+      "views": 320,
+      "readMore": "/post/6"
+    },
+    {
+      "id": 7,
+      "title": "Summer Salad Recipes to Keep You Cool",
+      "excerpt": "Stay refreshed with these light and tasty summer salad recipes.",
+      "content": "Summer calls for light and refreshing meals. These salad recipes are not only delicious but also packed with nutrients. Perfect for keeping you cool and energized.",
+      "image": "/images/salads.jpeg",
+      "category": "Salads",
+      "views": 290,
+      "readMore": "/post/7"
+    },
+    {
+      "id": 8,
+      "title": "One-Pot Meals for Busy Weeknights",
+      "excerpt": "Save time and dishes with these delicious one-pot meal recipes.",
+      "content": "One-pot meals are a lifesaver for busy weeknights. These recipes are easy to make and require minimal cleanup. From pasta to casseroles, give them a try!",
+      "image": "/images/one.jpeg",
+      "category": "Dinner",
+      "views": 340,
+      "readMore": "/post/8"
+    },
+    {
+      "id": 9,
+      "title": "Gluten-Free Baking Made Easy",
+      "excerpt": "Discover the joy of gluten-free baking with these simple and delicious recipes.",
+      "content": "Going gluten-free doesn't mean giving up your favorite baked goods. These gluten-free baking recipes are just as delicious as the originals. Try them out today!",
+      "image": "/images/gluten.jpeg",
+      "category": "Baking",
+      "views": 310,
+      "readMore": "/post/9"
+    },
+    {
+      "id": 10,
+      "title": "Refreshing Drinks for Hot Summer Days",
+      "excerpt": "Beat the heat with these cool and refreshing drink recipes.",
+      "content": "Stay hydrated and refreshed with these delicious summer drinks. From iced teas to mocktails, these recipes are perfect for a hot day by the pool.",
+      "image": "/images/summer.jpeg",
+      "category": "Drinks",
+      "views": 270,
+      "readMore": "/post/10"
+    },
+    {
+      "id": 11,
+      "title": "5-Minute Snacks for Busy People",
+      "excerpt": "Quick and tasty snack ideas you can make in 5 minutes or less.",
+      "content": "Need a quick bite? These 5-minute snacks are perfect for busy people on the go. From energy bites to fruit bowls, satisfy your cravings in no time!",
+      "image": "/images/snacks.jpeg",
+      "category": "Snacks",
+      "views": 260,
+      "readMore": "/post/11"
+    },
+    {
+      "id": 12,
+      "title": "Holiday Cookies to Sweeten Your Celebrations",
+      "excerpt": "Delicious holiday cookies that will make your celebrations even sweeter.",
+      "content": "Celebrate the festive season with these delightful holiday cookies. From gingerbread to sugar cookies, these recipes are perfect for sharing joy and sweetness.",
+      "image": "/images/cookies.jpeg",
+      "category": "Desserts",
+      "views": 350,
+      "readMore": "/post/12"
+    }
+  ]
+}
