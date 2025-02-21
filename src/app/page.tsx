@@ -38,9 +38,7 @@ export default function HomePage() {
 
     if (editingPost) {
       setPosts((prevPosts) =>
-        prevPosts.map((post) =>
-          post.id === editingPost.id ? { ...newPost, id: editingPost.id } : post
-        )
+        prevPosts.map((post) => (post.id === editingPost.id ? { ...newPost, id: editingPost.id } : post))
       );
       alert("Post updated successfully!");
       setEditingPost(null);
@@ -55,9 +53,11 @@ export default function HomePage() {
   };
 
   const handleEdit = (post) => {
+    alert(`Editing post: ${post.title}`);
     setNewPost(post);
     setEditingPost(post);
     setIsNewPost(true);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -79,39 +79,40 @@ export default function HomePage() {
         </button>
       </div>
 
-      {isNewPost && (
-        <div className="mb-6">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-96 mx-auto">
-            <h2 className="text-2xl font-bold mb-4 text-indigo-600">
-              {editingPost ? "Edit Post" : "Create Post"}
-            </h2>
-            <label className="block mb-2">
-              Title:
-              <input type="text" name="title" value={newPost.title} onChange={handleInputChange} className="w-full p-2 border rounded" />
-            </label>
-            <label className="block mb-2">
-              Excerpt:
-              <input type="text" name="excerpt" value={newPost.excerpt} onChange={handleInputChange} className="w-full p-2 border rounded" />
-            </label>
-            <label className="block mb-2">
-              Image URL:
-              <input type="text" name="image" value={newPost.image} onChange={handleInputChange} className="w-full p-2 border rounded" />
-            </label>
-            <label className="block mb-2">
-              Content:
-              <textarea name="content" value={newPost.content} onChange={handleInputChange} className="w-full p-2 border rounded" />
-            </label>
-            <div className="flex justify-between mt-4">
-              <button onClick={handleCreateOrUpdatePost} className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
-                {editingPost ? "Update" : "Submit"}
-              </button>
-              <button onClick={() => setIsNewPost(false)} className="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 transition">
-                Cancel
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      {isNewPost ? (
+  <div className="mb-6">
+    <div className="bg-white p-6 rounded-lg shadow-lg w-96 mx-auto">
+      <h2 className="text-2xl font-bold mb-4 text-indigo-600">
+        {editingPost ? "Edit Post" : "Create Post"}
+      </h2>
+      <label className="block mb-2">
+        Title:
+        <input type="text" name="title" value={newPost.title} onChange={handleInputChange} className="w-full p-2 border rounded" />
+      </label>
+      <label className="block mb-2">
+        Excerpt:
+        <input type="text" name="excerpt" value={newPost.excerpt} onChange={handleInputChange} className="w-full p-2 border rounded" />
+      </label>
+      <label className="block mb-2">
+        Image URL:
+        <input type="text" name="image" value={newPost.image} onChange={handleInputChange} className="w-full p-2 border rounded" />
+      </label>
+      <label className="block mb-2">
+        Content:
+        <textarea name="content" value={newPost.content} onChange={handleInputChange} className="w-full p-2 border rounded" />
+      </label>
+      <div className="flex justify-between mt-4">
+        <button onClick={handleCreateOrUpdatePost} className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+          {editingPost ? "Update" : "Submit"}
+        </button>
+        <button onClick={() => setIsNewPost(false)} className="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 transition">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+) : null}
+
 
       <div className="flex gap-6">
         <div className="w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -143,20 +144,20 @@ export default function HomePage() {
         </div>
         <Sidebar posts={posts} />
       </div>
+      {selectedPost ? (
+  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+    <div className="bg-white p-6 rounded-lg shadow-lg w-96 text-center">
+      <Image src={selectedPost.image} alt={selectedPost.title} width={600} height={400} className="rounded-md w-full" />
+      <h2 className="text-2xl font-bold mt-2 text-indigo-600">{selectedPost.title}</h2>
+      <p className="text-gray-600 mt-2">{selectedPost.excerpt}</p>
+      <p className="text-gray-600 mt-2">{selectedPost.content}</p>
+      <button onClick={() => setSelectedPost(null)} className="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 transition mt-4">
+        Close
+      </button>
+    </div>
+  </div>
+) : null}
 
-      {selectedPost && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-96 text-center">
-            <Image src={selectedPost.image} alt={selectedPost.title} width={600} height={400} className="rounded-md w-full" />
-            <h2 className="text-2xl font-bold mt-2 text-indigo-600">{selectedPost.title}</h2>
-            <p className="text-gray-600 mt-2">{selectedPost.excerpt}</p>
-            <p className="text-gray-600 mt-2">{selectedPost.content}</p>
-            <button onClick={() => setSelectedPost(null)} className="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 transition mt-4">
-              Close
-            </button>
-          </div>
-        </div>
-      )}
     </main>
   );
 }
