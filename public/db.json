@@ -25,7 +25,7 @@
       "title": "Quick and Easy Lunch Ideas for Busy Days",
       "excerpt": "These quick and easy lunch recipes are perfect for when you're on the go.",
       "content": "Don't have time to cook an elaborate lunch? No worries! These quick and easy recipes are perfect for busy days. From wraps to salads, there's something for everyone.",
-      "image": "/images/lunch.jpeg",
+      "image": "/images/LUNCH1.jpeg",
       "category": "Lunch",
       "views": 380,
       "readMore": "/post/3"
@@ -45,7 +45,7 @@
       "title": "Homemade Desserts to Satisfy Your Sweet Tooth",
       "excerpt": "Indulge in these delicious homemade desserts that are easy to make.",
       "content": "Craving something sweet? These homemade dessert recipes are perfect for satisfying your sweet tooth. From brownies to cheesecakes, try them out and impress your guests!",
-      "image": "/images/deserts.jpeg",
+      "image": "/images/DESSERTS.jpeg",
       "category": "Desserts",
       "views": 600,
       "readMore": "/post/5"
@@ -85,7 +85,7 @@
       "title": "Gluten-Free Baking Made Easy",
       "excerpt": "Discover the joy of gluten-free baking with these simple and delicious recipes.",
       "content": "Going gluten-free doesn't mean giving up your favorite baked goods. These gluten-free baking recipes are just as delicious as the originals. Try them out today!",
-      "image": "/images/gluten.jpeg",
+      "image": "/images/GLUTE.jpeg",
       "category": "Baking",
       "views": 310,
       "readMore": "/post/9"
@@ -115,7 +115,7 @@
       "title": "Holiday Cookies to Sweeten Your Celebrations",
       "excerpt": "Delicious holiday cookies that will make your celebrations even sweeter.",
       "content": "Celebrate the festive season with these delightful holiday cookies. From gingerbread to sugar cookies, these recipes are perfect for sharing joy and sweetness.",
-      "image": "/images/cookies.jpeg",
+      "image": "/images/COOKIE.jpeg",
       "category": "Desserts",
       "views": 350,
       "readMore": "/post/12"

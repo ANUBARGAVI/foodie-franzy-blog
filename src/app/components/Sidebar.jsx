@@ -1,5 +1,5 @@
 import { FaFire, FaRegComments, FaThumbsUp, FaHeart, FaHandsClapping } from "react-icons/fa6";
-import { FaSmile } from "react-icons/fa"; // ✅ Correct import for FaSmile
+import { FaSmile } from "react-icons/fa"; 
 import { MdTrendingUp } from "react-icons/md";
 
 export default function Sidebar({ posts }) {
@@ -22,10 +22,9 @@ export default function Sidebar({ posts }) {
   ];
 
   return (
-    <aside className="w-1/4 space-y-8">
-      
-      {/* Popular Posts */}
-      <div className="bg-white p-4 rounded-lg shadow-md h-fit transition-all duration-300 ease-in-out hover:scale-105">
+    <aside className="w-full lg:w-1/4 space-y-8 p-4 lg:p-0">
+    
+      <div className="bg-white p-4 rounded-lg shadow-md transition-transform transform hover:scale-105">
         <h2 className="text-2xl font-bold text-indigo-600 mb-4 flex items-center space-x-2">
           <MdTrendingUp className="text-yellow-400 text-3xl" /> <span>Popular Posts</span>
         </h2>
@@ -39,8 +38,8 @@ export default function Sidebar({ posts }) {
         </ul>
       </div>
 
-      {/* Reactions Section */}
-      <div className="bg-white p-4 rounded-lg shadow-md h-fit transition-all duration-300 ease-in-out hover:scale-105">
+      
+      <div className="bg-white p-4 rounded-lg shadow-md transition-transform transform hover:scale-105">
         <h2 className="text-2xl font-bold text-emerald-600 mb-4 flex items-center space-x-2">
           <FaFire className="text-orange-500 text-3xl" /> <span>People Reactions</span>
         </h2>
@@ -55,8 +54,8 @@ export default function Sidebar({ posts }) {
         </ul>
       </div>
 
-      {/* Comments Section */}
-      <div className="bg-white p-4 rounded-lg shadow-md h-fit transition-all duration-300 ease-in-out hover:scale-105">
+      
+      <div className="bg-white p-4 rounded-lg shadow-md transition-transform transform hover:scale-105">
         <h2 className="text-2xl font-bold text-orange-600 mb-4 flex items-center space-x-2">
           <FaRegComments className="text-blue-500 text-3xl" /> <span>Comments on Posts</span>
         </h2>
@@ -70,7 +69,6 @@ export default function Sidebar({ posts }) {
           ))}
         </ul>
       </div>
-
     </aside>
   );
 }
