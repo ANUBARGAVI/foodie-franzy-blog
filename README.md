@@ -1,21 +1,17 @@
-Foodie Frenzy Blog
+# Foodie Frenzy Blog 🍔📖
 
-Overview
+A simple blog application built with **Next.js, React, Tailwind CSS, and Node.js (Express + MongoDB)** for full CRUD operations.
 
-Foodie Frenzy Blog is a simple blog application built with Next.js, allowing users to create, edit, and delete blog posts. Users can also view posts in a card layout, read full details, and interact with the blog interface.
+## ✨ Features
 
-Features
+- 🏠 **Home Page**: Displays a list of blog posts with titles, excerpts, and images.
+- ✍️ **Create/Edit Posts**: Users can create and edit blog posts with a form.
+- 🗑️ **Delete Posts**: Confirmation modal before deleting a post.
+- 📖 **Read More**: View full blog post content in a modal.
+- 🎨 **Styled with Tailwind CSS**: A modern and responsive UI.
 
-Create, edit, and delete blog posts
+## 📌 Tech Stack
 
-View blog posts in a responsive grid layout
-
-Modal-based post creation and editing
-
-"Read More" functionality for full post details
-
-Sidebar displaying popular blogs
-
-Simple alert notifications for actions
-
-Uses JSON-based mock database (db.json)
+- **Frontend**: Next.js (React), Tailwind CSS
+- **Backend**: Node.js, Express, MongoDB (Mongoose)
+- **Icons**: React Icons (`react-icons/fi`)
